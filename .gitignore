@@ -28,6 +28,9 @@ __pycache__/
 .env
 .env.*
 
+# Local one-click helper for macOS
+*.command
+
 # Discarded generated background variants
 assets/badge-showroom-pedestal-bg-v1.png
 assets/badge-showroom-pedestal-bg-v2.png
