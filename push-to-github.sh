@@ -2,7 +2,6 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
-REMOTE_URL="https://github.com/frtghyujkiolsas-lab/ai-sdd.git"
 
 cd "$ROOT_DIR"
 
@@ -16,17 +15,17 @@ if ! command -v git >/dev/null 2>&1; then
 fi
 
 if [ ! -d ".git" ]; then
-  echo "Initializing git repository..."
-  git init
+  echo "Error: this folder is not a git repository."
+  echo "Run git init and set origin before using this helper."
+  exit 1
 fi
 
-current_remote="$(git remote get-url origin 2>/dev/null || true)"
-if [ "$current_remote" != "$REMOTE_URL" ]; then
-  if git remote get-url origin >/dev/null 2>&1; then
-    git remote set-url origin "$REMOTE_URL"
-  else
-    git remote add origin "$REMOTE_URL"
-  fi
+REMOTE_URL="$(git remote get-url origin 2>/dev/null || true)"
+if [ -z "$REMOTE_URL" ]; then
+  echo "Error: git remote 'origin' is not set."
+  echo "Example:"
+  echo "  git remote add origin https://github.com/<user>/<repo>.git"
+  exit 1
 fi
 
 git config credential.helper osxkeychain
@@ -66,4 +65,4 @@ git push -u origin "$branch"
 
 echo
 echo "Done. Open:"
-echo "https://github.com/frtghyujkiolsas-lab/ai-sdd"
+echo "$REMOTE_URL"
