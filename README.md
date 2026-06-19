@@ -1,8 +1,21 @@
-# AI Badge Studio｜AI 智能工牌生成系统
+<div align="center">
+
+# AI Badge Studio
+
+### AI 智能工牌生成系统
+
+![status](https://img.shields.io/badge/status-portfolio_demo-2ea44f)
+![frontend](https://img.shields.io/badge/frontend-React%20%7C%20Vite-61dafb)
+![backend](https://img.shields.io/badge/backend-Python-3776ab)
+![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
+
+**上传生活照 → 证件照标准化 → 工牌模板合成 → PNG 导出**
+
+*一个面向 HR / 行政场景的可控 AI 图像工作流 Demo*
 
 **简体中文** | [English](README.en.md)
 
-> 上传员工生活照，自动生成统一风格证件照，并合成企业工牌 PNG 的 AI 工作流 Demo。
+</div>
 
 ![AI Badge Studio Showcase](docs/showcase-hero-v5.png)
 

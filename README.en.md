@@ -1,8 +1,21 @@
+<div align="center">
+
 # AI Badge Studio
+
+### AI Employee Badge Generator
+
+![status](https://img.shields.io/badge/status-portfolio_demo-2ea44f)
+![frontend](https://img.shields.io/badge/frontend-React%20%7C%20Vite-61dafb)
+![backend](https://img.shields.io/badge/backend-Python-3776ab)
+![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
+
+**Photo Upload → ID Photo Standardization → Badge Composition → PNG Export**
+
+*A controllable AI image workflow demo for internal HR / admin scenarios*
 
 [简体中文](README.md) | **English**
 
-> Upload a casual employee photo, standardize it into an ID portrait, compose it into a branded employee badge, and export a ready-to-use PNG.
+</div>
 
 ![AI Badge Studio Showcase](docs/showcase-hero-v5.png)
 
