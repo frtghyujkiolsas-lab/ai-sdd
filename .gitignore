@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+figma-make-export/node_modules/
+
+# Build outputs
+dist/
+figma-make-export/dist/
+
+# Runtime files and private generated data
+logs/
+uploads/
+generated/
+screenshots/
+reference.png
+launchd/
+
+# Local comparison / experiment outputs
+output/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Local environment
+.env
+.env.*
+
+# Discarded generated background variants
+assets/badge-showroom-pedestal-bg-v1.png
+assets/badge-showroom-pedestal-bg-v2.png
+assets/badge-showroom-pedestal-bg-dark-v1.png
+assets/badge-showroom-pedestal-bg-dark-v2.png
+docs/showcase-hero-v2.png
+docs/showcase-hero-v3.png
+docs/showcase-hero-v4.svg
+docs/showcase-hero.png

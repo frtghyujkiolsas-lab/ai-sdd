@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>先马电商 AI 工牌模板</title>
+  <style>
+    :root {
+      --red: #d20e17;
+      --red-dark: #a8070f;
+      --red-soft: #f7c5c5;
+      --text: #333333;
+      --muted: #777777;
+      --line: #cfcfcf;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+      font-family: "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    }
+
+    .badge-canvas {
+      width: 900px;
+      height: 1200px;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+    }
+
+    .badge {
+      width: 730px;
+      height: 1168px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 42px;
+      background: #fff;
+      box-shadow:
+        0 10px 22px rgba(0, 0, 0, .28),
+        inset 0 0 0 2px rgba(170, 0, 0, .15);
+    }
+
+    .badge::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .65);
+      pointer-events: none;
+      z-index: 30;
+    }
+
+    .top-red {
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 414px;
+      background:
+        radial-gradient(circle at 83% 18%, rgba(255,255,255,.12), transparent 30%),
+        linear-gradient(135deg, #ee202a 0%, #cf0d16 42%, #a7070f 100%);
+      color: #fff;
+      z-index: 1;
+    }
+
+    .top-red::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 310px;
+      height: 310px;
+      opacity: .42;
+      background:
+        radial-gradient(circle at 52% 48%, transparent 0 93px, rgba(255,255,255,.24) 94px 95px, transparent 96px),
+        linear-gradient(28deg, transparent 0 48%, rgba(255,255,255,.2) 49%, transparent 50%),
+        linear-gradient(-18deg, transparent 0 48%, rgba(255,255,255,.16) 49%, transparent 50%),
+        radial-gradient(circle, rgba(255,255,255,.4) 0 2px, transparent 3px);
+      background-size: auto, auto, auto, 52px 52px;
+      border-radius: 50%;
+      transform: translate(42px, -26px);
+    }
+
+    .top-red::after {
+      content: "";
+      position: absolute;
+      right: 48px;
+      top: 114px;
+      width: 230px;
+      height: 230px;
+      opacity: .32;
+      border-radius: 50%;
+      background:
+        radial-gradient(ellipse at 50% 50%, rgba(255,255,255,.35) 0 1px, transparent 2px) 0 0 / 6px 5px;
+      mask-image: radial-gradient(circle, #000 0 65%, transparent 72%);
+    }
+
+    .slot {
+      position: absolute;
+      left: 50%;
+      top: 38px;
+      width: 134px;
+      height: 30px;
+      transform: translateX(-50%);
+      border-radius: 18px;
+      background: #fbfbfb;
+      box-shadow:
+        inset 0 4px 10px rgba(0, 0, 0, .22),
+        0 2px 5px rgba(255,255,255,.7);
+      z-index: 5;
+    }
+
+    .brand {
+      position: absolute;
+      top: 106px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 58px;
+      font-weight: 900;
+      letter-spacing: .02em;
+      line-height: 1;
+      text-shadow: 0 4px 10px rgba(0,0,0,.16);
+      z-index: 4;
+    }
+
+    .badge-title {
+      position: absolute;
+      top: 193px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 31px;
+      color: #fff;
+      font-size: 23px;
+      font-weight: 600;
+      letter-spacing: .56em;
+      z-index: 4;
+    }
+
+    .badge-title::before,
+    .badge-title::after {
+      content: "";
+      width: 96px;
+      height: 1px;
+      background: rgba(255,255,255,.88);
+    }
+
+    .title-mark {
+      position: absolute;
+      top: 239px;
+      left: 50%;
+      width: 39px;
+      height: 4px;
+      transform: translateX(-50%);
+      border-radius: 2px;
+      background: #fff;
+      z-index: 4;
+    }
+
+    .white-panel {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 330px;
+      bottom: 136px;
+      background: #fff;
+      z-index: 2;
+    }
+
+    .white-panel::before {
+      content: "";
+      position: absolute;
+      left: -70px;
+      top: -78px;
+      width: 880px;
+      height: 178px;
+      border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+      background: #fff;
+      transform: rotate(-1.5deg);
+      box-shadow:
+        -8px -36px 0 rgba(255, 111, 111, .48),
+        -18px -52px 0 rgba(255, 148, 148, .32);
+    }
+
+    .white-panel::after {
+      content: "";
+      position: absolute;
+      right: -118px;
+      bottom: 110px;
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      opacity: .34;
+      background:
+        linear-gradient(30deg, transparent 49%, #ee9a9a 50%, transparent 51%),
+        linear-gradient(-30deg, transparent 49%, #ee9a9a 50%, transparent 51%),
+        radial-gradient(circle, transparent 0 63%, #ee9a9a 64%, transparent 65%);
+    }
+
+    .bottom-red {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 182px;
+      background: linear-gradient(180deg, #e41620 0%, #bd0811 75%, #a2070f 100%);
+      z-index: 3;
+    }
+
+    .bottom-red::before {
+      content: "";
+      position: absolute;
+      left: -90px;
+      top: -45px;
+      width: 900px;
+      height: 105px;
+      background: #fff;
+      border-radius: 50%;
+      transform: rotate(2.2deg);
+    }
+
+    .bottom-red::after {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: -62px;
+      width: 910px;
+      height: 116px;
+      border-radius: 50%;
+      background: rgba(245, 187, 187, .62);
+      transform: rotate(2.2deg);
+    }
+
+    .skyline {
+      position: absolute;
+      left: 54px;
+      bottom: 165px;
+      width: 178px;
+      height: 150px;
+      opacity: .24;
+      z-index: 3;
+    }
+
+    .tower {
+      position: absolute;
+      bottom: 0;
+      background: #edb7b7;
+    }
+
+    .tower.a { left: 0; width: 18px; height: 54px; }
+    .tower.b { left: 25px; width: 18px; height: 92px; }
+    .tower.b::before {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: -58px;
+      width: 3px;
+      height: 58px;
+      background: #edb7b7;
+    }
+    .tower.c { left: 54px; width: 36px; height: 42px; }
+    .tower.d { left: 99px; width: 28px; height: 66px; }
+    .tower.e { left: 136px; width: 34px; height: 34px; }
+
+    .portrait-shell {
+      position: absolute;
+      top: 262px;
+      left: 50%;
+      width: 322px;
+      height: 417px;
+      padding: 12px;
+      transform: translateX(-50%);
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 8px 18px rgba(0,0,0,.18);
+      z-index: 8;
+    }
+
+    .portrait {
+      width: 100%;
+      height: 100%;
+      border-radius: 18px;
+      border: 2px dashed #888;
+      overflow: hidden;
+      position: relative;
+      background:
+        radial-gradient(circle at 50% 38%, #d5d5d5 0 54px, transparent 55px),
+        radial-gradient(ellipse at 50% 83%, #d5d5d5 0 115px, transparent 116px),
+        linear-gradient(135deg, #f7f7f7 0%, #efefef 47%, #ffffff 100%);
+    }
+
+    .portrait-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .portrait.has-photo {
+      border-style: solid;
+    }
+
+    .portrait.has-photo .portrait-photo {
+      display: block;
+    }
+
+    .info {
+      position: absolute;
+      top: 692px;
+      left: 151px;
+      width: 437px;
+      z-index: 9;
+    }
+
+    .row {
+      position: relative;
+      height: 59px;
+      display: grid;
+      grid-template-columns: 46px 62px 68px 21px 1fr;
+      align-items: center;
+      border-bottom: 1px solid #d9d9d9;
+    }
+
+    .icon {
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: var(--red);
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .label-cn {
+      font-size: 24px;
+      font-weight: 850;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .label-en {
+      font-size: 19px;
+      color: var(--muted);
+      white-space: nowrap;
+      transform: translateY(1px);
+    }
+
+    .sep {
+      color: #bfbfbf;
+      text-align: center;
+      font-size: 21px;
+    }
+
+    .value {
+      color: #333;
+      font-size: 23px;
+      padding-left: 13px;
+      white-space: nowrap;
+    }
+
+    .value.blank {
+      height: 1px;
+      background: #c7c7c7;
+      align-self: center;
+      transform: translateY(2px);
+    }
+
+    .qr {
+      position: absolute;
+      top: 924px;
+      left: 50%;
+      width: 93px;
+      height: 93px;
+      transform: translateX(-50%);
+      padding: 7px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 0 0 1px #cfcfcf, 0 4px 9px rgba(0,0,0,.12);
+      z-index: 8;
+    }
+
+    .qr-grid {
+      width: 100%;
+      height: 100%;
+      background: #fff url("./assets/qr-reference-crop.png") center / cover no-repeat;
+    }
+
+    .qr-text {
+      position: absolute;
+      top: 1022px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: #575757;
+      font-size: 15px;
+      z-index: 8;
+    }
+
+    .company {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 39px;
+      color: #fff;
+      text-align: center;
+      z-index: 9;
+    }
+
+    .company-cn {
+      font-size: 25px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      line-height: 1.25;
+    }
+
+    .company-en {
+      margin-top: 5px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .06em;
+    }
+  </style>
+</head>
+<body>
+  <main class="badge-canvas" aria-label="先马电商员工工牌模板">
+    <section class="badge">
+      <div class="top-red">
+        <div class="slot"></div>
+        <div class="brand">XIANMA-EC 先马电商</div>
+        <div class="badge-title">EMPLOYEE BADGE</div>
+        <div class="title-mark"></div>
+      </div>
+
+      <div class="white-panel"></div>
+      <div class="skyline">
+        <span class="tower a"></span>
+        <span class="tower b"></span>
+        <span class="tower c"></span>
+        <span class="tower d"></span>
+        <span class="tower e"></span>
+      </div>
+      <div class="bottom-red"></div>
+
+      <div class="portrait-shell">
+        <div class="portrait">
+          <img class="portrait-photo" src="" alt="员工证件照" />
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="row">
+          <div class="icon">●</div>
+          <div class="label-cn">姓名</div>
+          <div class="label-en">NAME</div>
+          <div class="sep">|</div>
+          <div class="value blank"></div>
+        </div>
+        <div class="row">
+          <div class="icon">用</div>
+          <div class="label-cn">部门</div>
+          <div class="label-en">DEPT</div>
+          <div class="sep">|</div>
+          <div class="value blank"></div>
+        </div>
+        <div class="row">
+          <div class="icon">▣</div>
+          <div class="label-cn">岗位</div>
+          <div class="label-en">TITLE</div>
+          <div class="sep">|</div>
+          <div class="value blank"></div>
+        </div>
+        <div class="row">
+          <div class="icon">▤</div>
+          <div class="label-cn">工号</div>
+          <div class="label-en">ID</div>
+          <div class="sep">:</div>
+          <div class="value">XM-2026-001</div>
+        </div>
+      </div>
+
+      <div class="qr">
+        <div class="qr-grid"></div>
+      </div>
+      <div class="qr-text">扫描二维码 验证身份</div>
+
+      <footer class="company">
+        <div class="company-cn">湖南先马品牌管理有限公司</div>
+        <div class="company-en">HUNAN XIANMA BRAND MANAGEMENT CO., LTD.</div>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

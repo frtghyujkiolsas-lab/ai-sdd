@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>先马电商 AI 工牌动态模板</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #fff;
+      font-family: "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    }
+
+    .badge-canvas {
+      width: 900px;
+      height: 1200px;
+      position: relative;
+      overflow: hidden;
+      background: #fff url("../assets/reference-900x1200.png") 0 0 / 900px 1200px no-repeat;
+    }
+
+    .portrait-photo {
+      position: absolute;
+      left: 297px;
+      top: 286px;
+      width: 306px;
+      height: 389px;
+      object-fit: cover;
+      border-radius: 16px;
+      display: block;
+    }
+
+    .portrait-mask {
+      position: absolute;
+      left: 292px;
+      top: 278px;
+      width: 316px;
+      height: 405px;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .field-cover {
+      position: absolute;
+      left: 448px;
+      width: 216px;
+      height: 36px;
+      background: #fff;
+    }
+
+    .field-value {
+      position: absolute;
+      left: 458px;
+      width: 210px;
+      color: #30343b;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .name-cover { top: 718px; }
+    .dept-cover { top: 780px; }
+    .title-cover { top: 843px; }
+    .id-cover { top: 906px; }
+
+    .name-value { top: 726px; }
+    .dept-value { top: 789px; }
+    .title-value { top: 852px; }
+    .id-value { top: 914px; }
+  </style>
+</head>
+<body>
+  <main class="badge-canvas" aria-label="先马电商员工工牌">
+    <div class="portrait-mask"></div>
+    <img class="portrait-photo" src="{{ID_PHOTO}}" alt="员工证件照" />
+
+    <div class="field-cover name-cover"></div>
+    <div class="field-cover dept-cover"></div>
+    <div class="field-cover title-cover"></div>
+    <div class="field-cover id-cover"></div>
+
+    <div class="field-value name-value">{{NAME}}</div>
+    <div class="field-value dept-value">{{DEPARTMENT}}</div>
+    <div class="field-value title-value">{{POSITION}}</div>
+    <div class="field-value id-value">{{EMPLOYEE_ID}}</div>
+  </main>
+</body>
+</html>
