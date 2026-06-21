@@ -9,7 +9,7 @@
 | 工牌模板 | `templates/` |
 | 展示截图 | `screenshots/` |
 | 标准流程文档 | `docs/` |
-| OpenSpec 规格 | `openspec/` |
+| 规格与变更包 | `openspec/` |
 
 ## 验收口径
 

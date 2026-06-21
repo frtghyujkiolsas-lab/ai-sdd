@@ -2,15 +2,15 @@
 
 # AI Badge Studio
 
-### AI-SDD / OpenSpec Spec-Driven Development Demo
+### AI-SDD Spec-Driven Development Demo
 
 ![status](https://img.shields.io/badge/status-portfolio_demo-2ea44f)
-![workflow](https://img.shields.io/badge/workflow-Spec--Driven%20Development-red)
+![workflow](https://img.shields.io/badge/workflow-SDD%20Spec--Driven%20Development-red)
 ![frontend](https://img.shields.io/badge/frontend-React%20%7C%20Vite-61dafb)
 ![backend](https://img.shields.io/badge/backend-Python-3776ab)
 ![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
 
-**Requirement Clarification → PRD → OpenSpec Specs → Prototype Freeze → API Contract → Implementation → Integration Test**
+**Requirement Clarification → PRD → Specs → Prototype Freeze → API Contract → Implementation → Integration Test**
 
 *A spec-driven AI product delivery workflow demonstrated through an employee badge generator*
 
@@ -22,7 +22,7 @@
 
 ## Why This Project
 
-`ai-sdd` is a **Spec-Driven Development (SDD)** sample repository for AI product managers and solo builders. It does not only showcase a small tool. It demonstrates how to turn a vague business request into PRD, OpenSpec specs, API contracts, implementation code, and testable delivery artifacts.
+`ai-sdd` is a **Spec-Driven Development (SDD)** sample repository for AI product managers and solo builders. It does not only showcase a small tool. It demonstrates how to turn a vague business request into PRD, specs, API contracts, implementation code, and testable delivery artifacts.
 
 The current example is an **AI Employee Badge Generator**:
 
@@ -41,12 +41,12 @@ Photo Upload
 → PNG Export
 ```
 
-## AI-SDD / OpenSpec Workflow
+## AI-SDD Workflow
 
 ```text
 01 Requirement Clarification
 → 02 PRD
-→ 03 OpenSpec Specs
+→ 03 Specs
 → 04 Prototype Freeze
 → 05 API Contract
 → 06 Implementation
@@ -61,9 +61,9 @@ Documentation map:
 | Solution freeze | [Prototype Freeze](docs/03-prototype-freeze.md) · [API Contract](docs/04-api-contract.md) |
 | Delivery | [Backend Design](docs/05-backend-design.md) · [Integration Test](docs/06-integration-test.md) · [Delivery Review](docs/07-delivery-review.md) |
 
-## OpenSpec Structure
+## Spec-Driven Structure
 
-This repository follows the OpenSpec-style `specs/` + `changes/` model, so requirements do not stay as loose notes or a single PRD. They are converted into verifiable, traceable, and iterative specs:
+This repository follows a `specs/` + `changes/` model, so requirements do not stay as loose notes or a single PRD. They are converted into verifiable, traceable, and iterative specs:
 
 ```text
 openspec/
@@ -73,7 +73,7 @@ openspec/
 
 `specs/` describes what the system should currently do. `changes/ai-badge-demo/` records the complete delivery process from intent to implementation. Future capabilities such as multiple templates or batch generation first enter `changes/`, then get synchronized into the main specs.
 
-## OpenSpec Iteration Log
+## Spec Iteration Log
 
 | Change | Status | Description |
 | --- | --- | --- |
@@ -161,7 +161,7 @@ task_id    Generated task ID
 ```text
 xianma-badge/
 ├── docs/                     # Standard product delivery workflow docs
-├── openspec/                 # OpenSpec-style specs and change package
+├── openspec/                 # Specs and change packages
 ├── figma-make-export/        # React frontend prototype
 ├── server.py                 # Local API service
 ├── templates/                # Badge HTML/CSS templates

@@ -2,15 +2,15 @@
 
 # AI Badge Studio
 
-### AI-SDD / OpenSpec 规范驱动开发 Demo
+### AI-SDD 规范驱动开发 Demo
 
 ![status](https://img.shields.io/badge/status-portfolio_demo-2ea44f)
-![workflow](https://img.shields.io/badge/workflow-Spec--Driven%20Development-red)
+![workflow](https://img.shields.io/badge/workflow-SDD%20Spec--Driven%20Development-red)
 ![frontend](https://img.shields.io/badge/frontend-React%20%7C%20Vite-61dafb)
 ![backend](https://img.shields.io/badge/backend-Python-3776ab)
 ![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
 
-**需求澄清 → PRD → OpenSpec 规格 → 原型定稿 → 接口契约 → 前后端实现 → 联调验收**
+**需求澄清 → PRD → 规格沉淀 → 原型定稿 → 接口契约 → 前后端实现 → 联调验收**
 
 *用 AI 工牌生成系统演示一套从需求到代码的 SDD 规范驱动开发流程*
 
@@ -22,7 +22,7 @@
 
 ## 项目简介
 
-`ai-sdd` 是一个面向 AI 产品经理 / 独立开发者的 **SDD（Spec-Driven Development，规范驱动开发）样例仓库**。它不是只展示一个小工具，而是展示如何把一个模糊业务需求，拆成 PRD、OpenSpec 规格、接口契约、实现代码和测试验收等可追踪产物。
+`ai-sdd` 是一个面向 AI 产品经理 / 独立开发者的 **SDD（Spec-Driven Development，规范驱动开发）样例仓库**。它不是只展示一个小工具，而是展示如何把一个模糊业务需求，拆成 PRD、规格文档、接口契约、实现代码和测试验收等可追踪产物。
 
 当前样例项目是 **AI 智能工牌生成系统**：员工上传生活照，系统自动生成统一风格证件照，并合成企业工牌 PNG。
 
@@ -36,12 +36,12 @@
 → PNG 导出
 ```
 
-## AI-SDD / OpenSpec 规范驱动流程
+## AI-SDD 规范驱动流程
 
 ```text
 01 需求澄清
 → 02 PRD 定义
-→ 03 OpenSpec 规格沉淀
+→ 03 规格沉淀
 → 04 原型定稿
 → 05 接口契约
 → 06 前后端实现
@@ -56,9 +56,9 @@
 | 方案定稿 | [原型定稿](docs/03-prototype-freeze.md) · [接口契约](docs/04-api-contract.md) |
 | 开发交付 | [后端逻辑](docs/05-backend-design.md) · [前后端联调](docs/06-integration-test.md) · [交付验收](docs/07-delivery-review.md) |
 
-## OpenSpec 结构
+## 规格驱动结构
 
-本仓库用 OpenSpec 的 `specs/` + `changes/` 思路组织产物，让需求不是停留在聊天记录或单份 PRD 里，而是沉淀成可验证、可迭代、可追踪的规格：
+本仓库用 `specs/` + `changes/` 的方式组织产物，让需求不是停留在聊天记录或单份 PRD 里，而是沉淀成可验证、可迭代、可追踪的规格：
 
 ```text
 openspec/
@@ -68,7 +68,7 @@ openspec/
 
 `specs/` 记录系统当前应该具备的能力，`changes/ai-badge-demo/` 记录从需求到实现的完整交付过程。后续新增“多模板切换”“批量生成”等功能时，也先进入 `changes/`，再同步到主规格。
 
-## OpenSpec 迭代记录
+## 规格迭代记录
 
 | Change | 状态 | 说明 |
 | --- | --- | --- |
@@ -156,7 +156,7 @@ task_id    生成任务 ID
 ```text
 xianma-badge/
 ├── docs/                     # 标准产研流程文档
-├── openspec/                 # OpenSpec 风格规格与变更包
+├── openspec/                 # 规格与变更包
 ├── figma-make-export/        # React 前端原型
 ├── server.py                 # 本地 API 服务
 ├── templates/                # 工牌 HTML/CSS 模板
