@@ -48,16 +48,13 @@
 → 07 联调验收
 ```
 
-对应文档：
+文档地图：
 
-- [流程总览](docs/00-process-overview.md)
-- [需求澄清](docs/01-requirement-clarify.md)
-- [PRD](docs/02-prd.md)
-- [原型定稿](docs/03-prototype-freeze.md)
-- [接口契约](docs/04-api-contract.md)
-- [后端逻辑](docs/05-backend-design.md)
-- [前后端联调](docs/06-integration-test.md)
-- [交付验收](docs/07-delivery-review.md)
+| 阶段 | 文档 |
+| --- | --- |
+| 产品定义 | [流程总览](docs/00-process-overview.md) · [需求澄清](docs/01-requirement-clarify.md) · [PRD](docs/02-prd.md) |
+| 方案定稿 | [原型定稿](docs/03-prototype-freeze.md) · [接口契约](docs/04-api-contract.md) |
+| 开发交付 | [后端逻辑](docs/05-backend-design.md) · [前后端联调](docs/06-integration-test.md) · [交付验收](docs/07-delivery-review.md) |
 
 ## OpenSpec 结构
 

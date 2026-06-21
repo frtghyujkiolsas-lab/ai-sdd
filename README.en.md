@@ -53,16 +53,13 @@ Photo Upload
 → 07 Integration Test & Delivery Review
 ```
 
-Related docs:
+Documentation map:
 
-- [Process Overview](docs/00-process-overview.md)
-- [Requirement Clarification](docs/01-requirement-clarify.md)
-- [PRD](docs/02-prd.md)
-- [Prototype Freeze](docs/03-prototype-freeze.md)
-- [API Contract](docs/04-api-contract.md)
-- [Backend Design](docs/05-backend-design.md)
-- [Integration Test](docs/06-integration-test.md)
-- [Delivery Review](docs/07-delivery-review.md)
+| Stage | Docs |
+| --- | --- |
+| Product definition | [Process Overview](docs/00-process-overview.md) · [Requirement Clarification](docs/01-requirement-clarify.md) · [PRD](docs/02-prd.md) |
+| Solution freeze | [Prototype Freeze](docs/03-prototype-freeze.md) · [API Contract](docs/04-api-contract.md) |
+| Delivery | [Backend Design](docs/05-backend-design.md) · [Integration Test](docs/06-integration-test.md) · [Delivery Review](docs/07-delivery-review.md) |
 
 ## OpenSpec Structure
 
