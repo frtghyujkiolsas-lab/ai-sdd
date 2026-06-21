@@ -2,16 +2,16 @@
 
 # AI Badge Studio
 
-### AI 智能工牌生成系统
+### AI-SDD 标准产研流程 Demo
 
 ![status](https://img.shields.io/badge/status-portfolio_demo-2ea44f)
 ![frontend](https://img.shields.io/badge/frontend-React%20%7C%20Vite-61dafb)
 ![backend](https://img.shields.io/badge/backend-Python-3776ab)
 ![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
 
-**上传生活照 → 证件照标准化 → 工牌模板合成 → PNG 导出**
+**需求澄清 → PRD → 原型定稿 → 接口契约 → 前后端实现 → 联调验收**
 
-*一个面向 HR / 行政场景的可控 AI 图像工作流 Demo*
+*用 AI 工牌生成系统演示一套可复用的 AI 产品规范驱动交付流程*
 
 **简体中文** | [English](README.en.md)
 
@@ -21,7 +21,9 @@
 
 ## 项目简介
 
-这是一个面向企业 HR / 行政场景的 AI 产品 Demo，用来解决员工工牌制作中“照片来源不统一、人工修图耗时、版式难以保持一致”的问题。
+`ai-sdd` 是一个面向 AI 产品经理 / 独立开发者的标准产研流程样例仓库。它不是只展示一个小工具，而是展示如何把一个模糊业务需求，拆成可评审、可开发、可联调、可交付的结构化产物。
+
+当前样例项目是 **AI 智能工牌生成系统**：员工上传生活照，系统自动生成统一风格证件照，并合成企业工牌 PNG。
 
 核心流程不是简单生成一张图片，而是把证件照处理、工牌模板合成、字段校验和 PNG 导出串成一个可控工作流：
 
@@ -32,6 +34,49 @@
 → 信息确认 / 质量检查
 → PNG 导出
 ```
+
+## AI-SDD 流程
+
+```text
+01 需求澄清
+→ 02 PRD 定义
+→ 03 原型定稿
+→ 04 接口契约
+→ 05 后端逻辑
+→ 06 前后端联调
+→ 07 交付验收
+```
+
+对应文档：
+
+- [流程总览](docs/00-process-overview.md)
+- [需求澄清](docs/01-requirement-clarify.md)
+- [PRD](docs/02-prd.md)
+- [原型定稿](docs/03-prototype-freeze.md)
+- [接口契约](docs/04-api-contract.md)
+- [后端逻辑](docs/05-backend-design.md)
+- [前后端联调](docs/06-integration-test.md)
+- [交付验收](docs/07-delivery-review.md)
+
+## OpenSpec 结构
+
+本仓库参考 OpenSpec 的 `specs/` + `changes/` 思路组织产物：
+
+```text
+openspec/
+├── specs/      # 当前系统能力，作为 source of truth
+└── changes/    # 本次 AI 工牌 Demo 的变更包和交付记录
+```
+
+`specs/` 记录系统当前应该具备的能力，`changes/ai-badge-demo/` 记录从需求到实现的完整交付过程。
+
+## OpenSpec 迭代记录
+
+| Change | 状态 | 说明 |
+| --- | --- | --- |
+| `ai-badge-demo` | 已完成 | 跑通上传照片、证件照标准化、工牌合成和 PNG 导出基础闭环 |
+| `support-multiple-templates` | 规划中 | 下一步支持企业选择不同工牌模板，降低定制成本 |
+| `add-batch-generation` | 规划中 | 后续支持批量导入员工信息和照片，提高 HR 入职场景效率 |
 
 ## 核心功能
 
@@ -112,11 +157,12 @@ task_id    生成任务 ID
 
 ```text
 xianma-badge/
+├── docs/                     # 标准产研流程文档
+├── openspec/                 # OpenSpec 风格规格与变更包
 ├── figma-make-export/        # React 前端原型
 ├── server.py                 # 本地 API 服务
 ├── templates/                # 工牌 HTML/CSS 模板
 ├── assets/                   # 公开安全的视觉资源
-├── docs/                     # GitHub 展示资源
 └── README.md
 ```
 

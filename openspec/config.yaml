@@ -1,0 +1,6 @@
+schema: spec-driven
+context: >
+  This repository demonstrates an AI product delivery workflow. The current
+  example is an AI employee badge generator that turns a vague HR/admin request
+  into clarified requirements, prototype, API contract, implementation, and
+  integration-test artifacts.

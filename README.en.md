@@ -2,16 +2,16 @@
 
 # AI Badge Studio
 
-### AI Employee Badge Generator
+### AI-SDD Standard Product Delivery Demo
 
 ![status](https://img.shields.io/badge/status-portfolio_demo-2ea44f)
 ![frontend](https://img.shields.io/badge/frontend-React%20%7C%20Vite-61dafb)
 ![backend](https://img.shields.io/badge/backend-Python-3776ab)
 ![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
 
-**Photo Upload → ID Photo Standardization → Badge Composition → PNG Export**
+**Requirement Clarification → PRD → Prototype Freeze → API Contract → Implementation → Integration Test**
 
-*A controllable AI image workflow demo for internal HR / admin scenarios*
+*A reusable AI product delivery workflow demonstrated through an employee badge generator*
 
 [简体中文](README.md) | **English**
 
@@ -21,7 +21,9 @@
 
 ## Why This Project
 
-This is a small AI product demo for an internal HR / admin workflow:
+`ai-sdd` is a sample repository for AI product managers and solo builders. It does not only showcase a small tool. It demonstrates how to turn a vague business request into reviewable, buildable, testable, and deliverable product artifacts.
+
+The current example is an **AI Employee Badge Generator**:
 
 - Turn casual employee photos into standardized ID photos.
 - Keep employee fields editable and reviewable.
@@ -37,6 +39,49 @@ Photo Upload
 → Quality Check
 → PNG Export
 ```
+
+## AI-SDD Workflow
+
+```text
+01 Requirement Clarification
+→ 02 PRD
+→ 03 Prototype Freeze
+→ 04 API Contract
+→ 05 Backend Design
+→ 06 Frontend-Backend Integration
+→ 07 Delivery Review
+```
+
+Related docs:
+
+- [Process Overview](docs/00-process-overview.md)
+- [Requirement Clarification](docs/01-requirement-clarify.md)
+- [PRD](docs/02-prd.md)
+- [Prototype Freeze](docs/03-prototype-freeze.md)
+- [API Contract](docs/04-api-contract.md)
+- [Backend Design](docs/05-backend-design.md)
+- [Integration Test](docs/06-integration-test.md)
+- [Delivery Review](docs/07-delivery-review.md)
+
+## OpenSpec Structure
+
+This repository follows the OpenSpec-style `specs/` + `changes/` model:
+
+```text
+openspec/
+├── specs/      # Current system behavior as the source of truth
+└── changes/    # Change package and delivery records for the badge demo
+```
+
+`specs/` describes what the system should currently do. `changes/ai-badge-demo/` records the complete delivery process from intent to implementation.
+
+## OpenSpec Iteration Log
+
+| Change | Status | Description |
+| --- | --- | --- |
+| `ai-badge-demo` | Completed | Core flow for photo upload, ID photo standardization, badge composition, and PNG export |
+| `support-multiple-templates` | Planned | Support multiple company badge templates to reduce customization cost |
+| `add-batch-generation` | Planned | Support batch employee import and badge generation for HR onboarding |
 
 ## Core Features
 
@@ -117,11 +162,12 @@ task_id    Generated task ID
 
 ```text
 xianma-badge/
+├── docs/                     # Standard product delivery workflow docs
+├── openspec/                 # OpenSpec-style specs and change package
 ├── figma-make-export/        # React frontend prototype
 ├── server.py                 # Local API service
 ├── templates/                # Badge HTML/CSS templates
 ├── assets/                   # Public-safe visual assets
-├── docs/                     # GitHub showcase assets
 └── README.md
 ```
 
