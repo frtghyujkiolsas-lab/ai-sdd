@@ -2,16 +2,17 @@
 
 # AI Badge Studio
 
-### AI-SDD 标准产研流程 Demo
+### AI-SDD / OpenSpec 规范驱动开发 Demo
 
 ![status](https://img.shields.io/badge/status-portfolio_demo-2ea44f)
+![workflow](https://img.shields.io/badge/workflow-Spec--Driven%20Development-red)
 ![frontend](https://img.shields.io/badge/frontend-React%20%7C%20Vite-61dafb)
 ![backend](https://img.shields.io/badge/backend-Python-3776ab)
 ![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
 
-**需求澄清 → PRD → 原型定稿 → 接口契约 → 前后端实现 → 联调验收**
+**需求澄清 → PRD → OpenSpec 规格 → 原型定稿 → 接口契约 → 前后端实现 → 联调验收**
 
-*用 AI 工牌生成系统演示一套可复用的 AI 产品规范驱动交付流程*
+*用 AI 工牌生成系统演示一套从需求到代码的 SDD 规范驱动开发流程*
 
 **简体中文** | [English](README.en.md)
 
@@ -21,7 +22,7 @@
 
 ## 项目简介
 
-`ai-sdd` 是一个面向 AI 产品经理 / 独立开发者的标准产研流程样例仓库。它不是只展示一个小工具，而是展示如何把一个模糊业务需求，拆成可评审、可开发、可联调、可交付的结构化产物。
+`ai-sdd` 是一个面向 AI 产品经理 / 独立开发者的 **SDD（Spec-Driven Development，规范驱动开发）样例仓库**。它不是只展示一个小工具，而是展示如何把一个模糊业务需求，拆成 PRD、OpenSpec 规格、接口契约、实现代码和测试验收等可追踪产物。
 
 当前样例项目是 **AI 智能工牌生成系统**：员工上传生活照，系统自动生成统一风格证件照，并合成企业工牌 PNG。
 
@@ -35,16 +36,16 @@
 → PNG 导出
 ```
 
-## AI-SDD 流程
+## AI-SDD / OpenSpec 规范驱动流程
 
 ```text
 01 需求澄清
 → 02 PRD 定义
-→ 03 原型定稿
-→ 04 接口契约
-→ 05 后端逻辑
-→ 06 前后端联调
-→ 07 交付验收
+→ 03 OpenSpec 规格沉淀
+→ 04 原型定稿
+→ 05 接口契约
+→ 06 前后端实现
+→ 07 联调验收
 ```
 
 对应文档：
@@ -60,7 +61,7 @@
 
 ## OpenSpec 结构
 
-本仓库参考 OpenSpec 的 `specs/` + `changes/` 思路组织产物：
+本仓库用 OpenSpec 的 `specs/` + `changes/` 思路组织产物，让需求不是停留在聊天记录或单份 PRD 里，而是沉淀成可验证、可迭代、可追踪的规格：
 
 ```text
 openspec/
@@ -68,7 +69,7 @@ openspec/
 └── changes/    # 本次 AI 工牌 Demo 的变更包和交付记录
 ```
 
-`specs/` 记录系统当前应该具备的能力，`changes/ai-badge-demo/` 记录从需求到实现的完整交付过程。
+`specs/` 记录系统当前应该具备的能力，`changes/ai-badge-demo/` 记录从需求到实现的完整交付过程。后续新增“多模板切换”“批量生成”等功能时，也先进入 `changes/`，再同步到主规格。
 
 ## OpenSpec 迭代记录
 

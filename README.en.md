@@ -2,16 +2,17 @@
 
 # AI Badge Studio
 
-### AI-SDD Standard Product Delivery Demo
+### AI-SDD / OpenSpec Spec-Driven Development Demo
 
 ![status](https://img.shields.io/badge/status-portfolio_demo-2ea44f)
+![workflow](https://img.shields.io/badge/workflow-Spec--Driven%20Development-red)
 ![frontend](https://img.shields.io/badge/frontend-React%20%7C%20Vite-61dafb)
 ![backend](https://img.shields.io/badge/backend-Python-3776ab)
 ![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
 
-**Requirement Clarification → PRD → Prototype Freeze → API Contract → Implementation → Integration Test**
+**Requirement Clarification → PRD → OpenSpec Specs → Prototype Freeze → API Contract → Implementation → Integration Test**
 
-*A reusable AI product delivery workflow demonstrated through an employee badge generator*
+*A spec-driven AI product delivery workflow demonstrated through an employee badge generator*
 
 [简体中文](README.md) | **English**
 
@@ -21,7 +22,7 @@
 
 ## Why This Project
 
-`ai-sdd` is a sample repository for AI product managers and solo builders. It does not only showcase a small tool. It demonstrates how to turn a vague business request into reviewable, buildable, testable, and deliverable product artifacts.
+`ai-sdd` is a **Spec-Driven Development (SDD)** sample repository for AI product managers and solo builders. It does not only showcase a small tool. It demonstrates how to turn a vague business request into PRD, OpenSpec specs, API contracts, implementation code, and testable delivery artifacts.
 
 The current example is an **AI Employee Badge Generator**:
 
@@ -40,16 +41,16 @@ Photo Upload
 → PNG Export
 ```
 
-## AI-SDD Workflow
+## AI-SDD / OpenSpec Workflow
 
 ```text
 01 Requirement Clarification
 → 02 PRD
-→ 03 Prototype Freeze
-→ 04 API Contract
-→ 05 Backend Design
-→ 06 Frontend-Backend Integration
-→ 07 Delivery Review
+→ 03 OpenSpec Specs
+→ 04 Prototype Freeze
+→ 05 API Contract
+→ 06 Implementation
+→ 07 Integration Test & Delivery Review
 ```
 
 Related docs:
@@ -65,7 +66,7 @@ Related docs:
 
 ## OpenSpec Structure
 
-This repository follows the OpenSpec-style `specs/` + `changes/` model:
+This repository follows the OpenSpec-style `specs/` + `changes/` model, so requirements do not stay as loose notes or a single PRD. They are converted into verifiable, traceable, and iterative specs:
 
 ```text
 openspec/
@@ -73,7 +74,7 @@ openspec/
 └── changes/    # Change package and delivery records for the badge demo
 ```
 
-`specs/` describes what the system should currently do. `changes/ai-badge-demo/` records the complete delivery process from intent to implementation.
+`specs/` describes what the system should currently do. `changes/ai-badge-demo/` records the complete delivery process from intent to implementation. Future capabilities such as multiple templates or batch generation first enter `changes/`, then get synchronized into the main specs.
 
 ## OpenSpec Iteration Log
 
