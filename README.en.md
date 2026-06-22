@@ -10,9 +10,9 @@
 ![backend](https://img.shields.io/badge/backend-Python-3776ab)
 ![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
 
-**Requirement Clarification → PRD → Specs → Prototype Freeze → API Contract → Implementation → Integration Test**
+**Idea → Requirement → PRD → Specs → Prototype → API Contract → Frontend → Backend → Integration Test → MVP Delivery**
 
-*A spec-driven AI product delivery workflow demonstrated through an employee badge generator*
+*From idea to MVP: fast validation and high-quality delivery through a standard product-engineering workflow*
 
 [简体中文](README.md) | **English**
 
@@ -22,7 +22,7 @@
 
 ## Why This Project
 
-`ai-sdd` is a **Spec-Driven Development (SDD)** sample repository for AI product managers and solo builders. It does not only showcase a small tool. It demonstrates how to turn a vague business request into PRD, specs, API contracts, implementation code, and testable delivery artifacts.
+`ai-sdd` is a **Spec-Driven Development (SDD)** sample repository for AI product managers and solo builders. It does not only showcase a small tool. It demonstrates how to turn a vague business request into PRD, specs, API contracts, frontend interaction, backend logic, integration testing, and delivery artifacts.
 
 The current example is an **AI Employee Badge Generator**:
 
@@ -41,17 +41,26 @@ Photo Upload
 → PNG Export
 ```
 
+![AI Badge Studio Dashboard](docs/product-dashboard.png)
+
+The dashboard preview shows the complete product workspace: employee fields and photo upload on the left, AI ID-photo processing in the middle, final badge preview on the right, and quality / time / success-rate signals for delivery validation.
+
 ## AI-SDD Workflow
 
 ```text
-01 Requirement Clarification
-→ 02 PRD
-→ 03 Specs
-→ 04 Prototype Freeze
-→ 05 API Contract
-→ 06 Implementation
-→ 07 Integration Test & Delivery Review
+01 Idea
+→ 02 Requirement
+→ 03 PRD
+→ 04 Specs
+→ 05 Prototype
+→ 06 API Contract
+→ 07 Frontend
+→ 08 Backend
+→ 09 Integration Test
+→ 10 MVP Delivery
 ```
+
+![AI-SDD Workflow](docs/sdd-workflow.png)
 
 Documentation map:
 
