@@ -80,7 +80,7 @@ openspec/
 └── changes/    # Change packages and delivery records for the badge system
 ```
 
-`specs/` describes what the system should currently do. `changes/ai-badge-demo/` records the complete delivery process from intent to implementation. Future capabilities such as multiple templates or batch generation first enter `changes/`, then get synchronized into the main specs.
+`specs/` describes what the system should currently do. `changes/ai-badge-product-loop/` records the complete delivery process from intent to implementation. Future capabilities such as multiple templates or batch generation first enter `changes/`, then get synchronized into the main specs.
 
 ## Spec Iteration Log
 
@@ -150,11 +150,11 @@ Then open the local Vite address shown in the terminal.
 
 ```bash
 curl -X POST http://localhost:8888/api/generate \
-  -F 'name=Demo User' \
+  -F 'name=Sample User' \
   -F 'department=Product' \
   -F 'position=AI Product Manager' \
   -F 'employeeId=XM-2026-001' \
-  -F 'photo=@/path/to/demo-photo.png'
+  -F 'photo=@/path/to/sample-photo.png'
 ```
 
 Response:

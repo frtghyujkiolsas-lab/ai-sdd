@@ -1,8 +1,8 @@
-# Tasks: AI Badge Demo
+# Tasks: AI Badge Product Loop
 
 ## 1. Product Artifacts
 
-- [x] 1.1 Clarify target user, input, output, and MVP boundary.
+- [x] 1.1 Clarify target user, input, output, and core delivery scope.
 - [x] 1.2 Write PRD and core flow.
 - [x] 1.3 Freeze prototype pages and field structure.
 

@@ -1,8 +1,8 @@
-# Proposal: AI Badge Demo
+# Proposal: AI Badge Product Loop
 
 ## Intent
 
-Build a demo that shows how an AI product requirement can move from vague business input to a working, reviewable delivery.
+Build a product delivery sample that shows how an AI product requirement can move from vague business input to a working, reviewable delivery.
 
 ## Problem
 

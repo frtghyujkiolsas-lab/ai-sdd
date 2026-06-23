@@ -1,7 +1,7 @@
 # Spec: Delivery Testing
 
 ## Purpose
-Define the minimum checks required to verify the demo can be run, reviewed, and delivered safely.
+Define the minimum checks required to verify the product flow can be run, reviewed, and delivered safely.
 
 ## Requirements
 

@@ -80,7 +80,7 @@ def render_badge_html(task_id: str, id_photo_data_url: str, employee: dict[str, 
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
     values = {
         "{{ID_PHOTO}}": id_photo_data_url,
-        "{{NAME}}": html.escape(employee.get("name") or "Demo User"),
+        "{{NAME}}": html.escape(employee.get("name") or "Sample User"),
         "{{DEPARTMENT}}": html.escape(employee.get("department") or "产品部"),
         "{{POSITION}}": html.escape(employee.get("position") or "AI产品经理"),
         "{{EMPLOYEE_ID}}": html.escape(employee.get("employeeId") or "XM-2026-001"),

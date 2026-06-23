@@ -6,7 +6,7 @@ Allow the badge generator to support more than one company badge template, so th
 
 ## Problem
 
-The current demo proves one complete badge generation flow, but the template is fixed. In real HR/admin usage, different departments, visitor badges, temporary badges, or client demos may require different layouts.
+The current product flow proves one complete badge generation flow, but the template is fixed. In real HR/admin usage, different departments, visitor badges, temporary badges, or client preview scenarios may require different layouts.
 
 ## Scope
 

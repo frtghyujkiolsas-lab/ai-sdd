@@ -6,7 +6,7 @@ Support batch badge generation for onboarding or HR preparation scenarios where 
 
 ## Problem
 
-The current demo generates one employee badge per request. This proves the core workflow, but HR/admin work often happens in batches, especially during onboarding, events, or temporary staff registration.
+The current product flow generates one employee badge per request. This proves the core workflow, but HR/admin work often happens in batches, especially during onboarding, events, or temporary staff registration.
 
 ## Scope
 

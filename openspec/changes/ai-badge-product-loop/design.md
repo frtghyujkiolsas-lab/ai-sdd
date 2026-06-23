@@ -1,4 +1,4 @@
-# Design: AI Badge Demo
+# Design: AI Badge Product Loop
 
 ## Architecture
 

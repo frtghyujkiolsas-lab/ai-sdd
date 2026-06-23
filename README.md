@@ -75,7 +75,7 @@ openspec/
 └── changes/    # 本次 AI 工牌系统的变更包和交付记录
 ```
 
-`specs/` 记录系统当前应该具备的能力，`changes/ai-badge-demo/` 记录从需求到实现的完整交付过程。后续新增“多模板切换”“批量生成”等功能时，也先进入 `changes/`，再同步到主规格。
+`specs/` 记录系统当前应该具备的能力，`changes/ai-badge-product-loop/` 记录从需求到实现的完整交付过程。后续新增“多模板切换”“批量生成”等功能时，也先进入 `changes/`，再同步到主规格。
 
 ## 规格迭代记录
 
@@ -145,11 +145,11 @@ npm run dev
 
 ```bash
 curl -X POST http://localhost:8888/api/generate \
-  -F 'name=Demo User' \
+  -F 'name=Sample User' \
   -F 'department=Product' \
   -F 'position=AI Product Manager' \
   -F 'employeeId=XM-2026-001' \
-  -F 'photo=@/path/to/demo-photo.png'
+  -F 'photo=@/path/to/sample-photo.png'
 ```
 
 返回字段：

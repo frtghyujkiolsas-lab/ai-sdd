@@ -11,9 +11,9 @@ The project MUST document the business goal before implementation starts.
 #### Scenario: HR badge generation request
 - **GIVEN** the initial request is "upload a casual photo and generate a company badge"
 - **WHEN** the requirement is clarified
-- **THEN** the system records target users, input, output, constraints, and MVP boundary
+- **THEN** the system records target users, input, output, constraints, and core delivery scope
 
-### Requirement: Define MVP Boundary
+### Requirement: Define Core Delivery Scope
 The project MUST separate P0 core flow from future enhancements.
 
 #### Scenario: Scope control

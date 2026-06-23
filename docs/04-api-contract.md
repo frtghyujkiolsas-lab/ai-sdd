@@ -28,11 +28,11 @@
 
 ```bash
 curl -X POST http://localhost:8888/api/generate \
-  -F 'name=Demo User' \
+  -F 'name=Sample User' \
   -F 'department=Product' \
   -F 'position=AI Product Manager' \
   -F 'employeeId=XM-2026-001' \
-  -F 'photo=@/path/to/demo-photo.png'
+  -F 'photo=@/path/to/sample-photo.png'
 ```
 
 ## 契约原则
