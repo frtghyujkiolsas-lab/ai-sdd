@@ -2,17 +2,17 @@
 
 # AI Badge Studio
 
-### AI-SDD Spec-Driven Development Demo
+### AI-SDD Spec-Driven Development Sample
 
-![status](https://img.shields.io/badge/status-portfolio_demo-2ea44f)
+![status](https://img.shields.io/badge/status-product_delivery-2ea44f)
 ![workflow](https://img.shields.io/badge/workflow-SDD%20Spec--Driven%20Development-red)
 ![frontend](https://img.shields.io/badge/frontend-React%20%7C%20Vite-61dafb)
 ![backend](https://img.shields.io/badge/backend-Python-3776ab)
 ![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
 
-**Idea → Requirement → PRD → Specs → Prototype → API Contract → Frontend → Backend → Integration Test → MVP Delivery**
+**Idea → Requirement → PRD → Specs → Prototype → API Contract → Frontend → Backend → Integration Test → Product Delivery**
 
-*From idea to MVP: fast validation and high-quality delivery through a standard product-engineering workflow*
+*From idea to a complete product loop: fast validation and high-quality delivery through a standard product-engineering workflow*
 
 [简体中文](README.md) | **English**
 
@@ -57,7 +57,7 @@ The dashboard preview shows the complete product workspace: employee fields and 
 → 07 Frontend
 → 08 Backend
 → 09 Integration Test
-→ 10 MVP Delivery
+→ 10 Product Delivery
 ```
 
 ![AI-SDD Workflow](docs/sdd-workflow.png)
@@ -77,7 +77,7 @@ This repository follows a `specs/` + `changes/` model, so requirements do not st
 ```text
 openspec/
 ├── specs/      # Current system behavior as the source of truth
-└── changes/    # Change package and delivery records for the badge demo
+└── changes/    # Change packages and delivery records for the badge system
 ```
 
 `specs/` describes what the system should currently do. `changes/ai-badge-demo/` records the complete delivery process from intent to implementation. Future capabilities such as multiple templates or batch generation first enter `changes/`, then get synchronized into the main specs.
@@ -86,7 +86,7 @@ openspec/
 
 | Change | Status | Description |
 | --- | --- | --- |
-| `ai-badge-demo` | Completed | Core flow for photo upload, ID photo standardization, badge composition, and PNG export |
+| Core product loop | Completed | Core flow for photo upload, ID photo standardization, badge composition, and PNG export |
 | `support-multiple-templates` | Planned | Support multiple company badge templates to reduce customization cost |
 | `add-batch-generation` | Planned | Support batch employee import and badge generation for HR onboarding |
 
@@ -180,4 +180,4 @@ xianma-badge/
 
 ## Privacy Note
 
-This repository should only include demo images and anonymized sample data. Avoid committing real employee photos, generated badges with real personal information, logs, or local uploads.
+This repository should only include anonymized sample images and test data. Avoid committing real employee photos, generated badges with real personal information, logs, or local uploads.

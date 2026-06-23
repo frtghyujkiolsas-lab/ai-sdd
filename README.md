@@ -2,17 +2,17 @@
 
 # AI Badge Studio
 
-### AI-SDD 规范驱动开发 Demo
+### AI-SDD 规范驱动开发样例
 
-![status](https://img.shields.io/badge/status-portfolio_demo-2ea44f)
+![status](https://img.shields.io/badge/status-product_delivery-2ea44f)
 ![workflow](https://img.shields.io/badge/workflow-SDD%20Spec--Driven%20Development-red)
 ![frontend](https://img.shields.io/badge/frontend-React%20%7C%20Vite-61dafb)
 ![backend](https://img.shields.io/badge/backend-Python-3776ab)
 ![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-6e7781)
 
-**Idea → 需求澄清 → PRD → 规格沉淀 → 原型定稿 → 接口契约 → 前端交互 → 后端逻辑 → 前后联调 → MVP 交付**
+**Idea → 需求澄清 → PRD → 规格沉淀 → 原型定稿 → 接口契约 → 前端交互 → 后端逻辑 → 前后联调 → 产品交付**
 
-*遵循标准产研流程，独立完成从 Idea 到 MVP 的快速验证与高质量交付*
+*遵循标准产研流程，独立完成从 Idea 到核心产品闭环的快速验证与高质量交付*
 
 **简体中文** | [English](README.en.md)
 
@@ -52,7 +52,7 @@
 → 07 前端交互
 → 08 后端逻辑
 → 09 前后联调
-→ 10 MVP 交付
+→ 10 产品交付
 ```
 
 ![AI-SDD Workflow](docs/sdd-workflow.png)
@@ -72,7 +72,7 @@
 ```text
 openspec/
 ├── specs/      # 当前系统能力，作为 source of truth
-└── changes/    # 本次 AI 工牌 Demo 的变更包和交付记录
+└── changes/    # 本次 AI 工牌系统的变更包和交付记录
 ```
 
 `specs/` 记录系统当前应该具备的能力，`changes/ai-badge-demo/` 记录从需求到实现的完整交付过程。后续新增“多模板切换”“批量生成”等功能时，也先进入 `changes/`，再同步到主规格。
@@ -81,7 +81,7 @@ openspec/
 
 | Change | 状态 | 说明 |
 | --- | --- | --- |
-| `ai-badge-demo` | 已完成 | 跑通上传照片、证件照标准化、工牌合成和 PNG 导出基础闭环 |
+| 核心闭环交付 | 已完成 | 跑通上传照片、证件照标准化、工牌合成和 PNG 导出基础闭环 |
 | `support-multiple-templates` | 规划中 | 下一步支持企业选择不同工牌模板，降低定制成本 |
 | `add-batch-generation` | 规划中 | 后续支持批量导入员工信息和照片，提高 HR 入职场景效率 |
 
@@ -175,4 +175,4 @@ xianma-badge/
 
 ## 隐私说明
 
-仓库只保留 Demo 图片和匿名样例数据，不提交真实员工照片、真实工牌、日志、上传文件或本地生成结果。
+仓库只保留匿名样例图片和测试数据，不提交真实员工照片、真实工牌、日志、上传文件或本地生成结果。
