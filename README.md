@@ -65,6 +65,20 @@
 | 方案定稿 | [原型定稿](docs/03-prototype-freeze.md) · [接口契约](docs/04-api-contract.md) |
 | 开发交付 | [后端逻辑](docs/05-backend-design.md) · [前后端联调](docs/06-integration-test.md) · [交付验收](docs/07-delivery-review.md) |
 
+## 一条需求如何交付
+
+规范驱动不是多写几份文档，而是让同一项需求在不同阶段都能被找到、被验证。以“上传生活照后生成可下载工牌”为例：
+
+```text
+REQ-01 / REQ-02 / REQ-03
+→ 上传页、处理页、结果页
+→ POST /api/generate
+→ AC-01 / AC-02 / AC-03 联调验证
+→ 交付验收记录
+```
+
+具体映射见 [需求澄清](docs/01-requirement-clarify.md)、[PRD](docs/02-prd.md)、[接口契约](docs/04-api-contract.md)、[前后端联调](docs/06-integration-test.md) 和 [交付验收](docs/07-delivery-review.md)。
+
 ## 规格驱动结构
 
 本仓库用 `specs/` + `changes/` 的方式组织产物，让需求不是停留在聊天记录或单份 PRD 里，而是沉淀成可验证、可迭代、可追踪的规格：
@@ -75,7 +89,7 @@ openspec/
 └── changes/    # 本次 AI 工牌系统的变更包和交付记录
 ```
 
-`specs/` 记录系统当前应该具备的能力，`changes/ai-badge-product-loop/` 记录从需求到实现的完整交付过程。后续新增“多模板切换”“批量生成”等功能时，也先进入 `changes/`，再同步到主规格。
+`specs/` 记录系统当前应该具备的能力，`changes/ai-badge-product-loop/` 记录从需求到实现的完整交付过程。后续新增“多模板切换”“批量生成”等功能时，也先进入 `changes/`，再同步到主规格。每个变更包均按“为什么做 → 行为规格 → 技术方案 → 实施任务 → 验收”组织，避免需求、代码和测试脱节。
 
 ## 规格迭代记录
 
